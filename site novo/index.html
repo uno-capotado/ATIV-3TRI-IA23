@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-container" id="myNavbar">
+            <a href="#nana" onclick="toggleMenu()">Sinopse de Nana</a>
+            <a href="#nanakomatsu" onclick="toggleMenu()">Nana Komatsu</a>
+            <a href="#nanaosaki" onclick="toggleMenu()">Nana Osaki</a>
+            <a href="#idmusica" onclick="toggleMenu()">Músicas</a>
+            <a href="#bs" onclick="toggleMenu()">Black Stones</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="head"></div>
+    </header>
+    
+    <main>
+        <div class="scrr">Nana
+            <img src="assets/star.png" class="icon1">
+            <img src="assets/star.png" class="icon2">
+        </div>
+
+        <div class="titulo1" id="nana">Sinopse de Nana☆</div>
+
+        <div class="topico">
+            <img src="assets/nana.jpg" class="imagem1" onclick="openModal('assets/nana.jpg')">
+            <article class="historia">
+                <p>
+                    "Nana" é um manga envolvente de Ai Yazawa que narra a vida de duas jovens, ambas chamadas Nana, que se encontram por acaso em um
+                    trem para Tóquio. Nana Komatsu, uma otimista em busca de amor, e Nana Osaki, vocalista da banda punk "Black Stones", embarcam em
+                    uma jornada de amizade, desafios amorosos e autodescoberta na pulsante cidade de Tóquio.<br><br>O manga explora as complexidades
+                    da vida adulta, relacionamentos e a poderosa influência da música, oferecendo uma narrativa rica em emoções e desenvolvimento de
+                    personagens. Mesmo incompleto devido à saúde da autora, "Nana" deixa uma marca duradoura.
+                </p>
+            </article>
+        </div>
+
+        <div class="titulo" id="nanakomatsu">Nana Komatsu☆</div>
+
+        <div class="topico">
+            <img src="assets/NanaHachi.jpg" id="nanah" class="imagem" onclick="openModal('modalNanaKomatsu')">
+            <article class="historia">
+                <p>
+                    Ela é uma jovem romântica e sonhadora que se muda para Tóquio em busca de amor e uma nova vida. Conhecida como "Hachi", 
+                    Nana Komatsu é contrastada com a outra protagonista do mangá, Nana Osaki. <br><br>
+                    Hachi é uma personagem otimista, por vezes ingênua, que enfrenta desafios na vida amorosa e nas amizades. Ela busca estabilidade 
+                    emocional e muitas vezes se depara com escolhas difíceis no decorrer da história. Sua jornada de autodescoberta é marcada por 
+                    relacionamentos complicados, incluindo sua amizade próxima com Nana Osaki e seus envolvimentos românticos. <br><br>
+                    Ao longo da trama, Nana Komatsu é um elemento vital na construção da narrativa, oferecendo uma perspectiva diferente de Nana Osaki e 
+                    contribuindo para a complexidade emocional da história. A dualidade entre as duas Nanas, suas amizades e desafios pessoais formam a 
+                    base de "Nana", tornando-a uma obra rica em emoções e experiências de vida. 
+                </p>
+            </article>
+        </div>
+
+        <div class="titulo" id="nanaosaki">Nana Osaki☆</div>
+
+        <div class="topico">
+            <img src="assets/NanaOsaki.jpg" id="nanao" class="imagem" onclick="openModal('modalNanaOsaki')">
+            <article class="historia">
+                <p>
+                    Ela é uma vocalista talentosa e carismática, conhecida por seu estilo punk e atitude rebelde. Nana Osaki é uma figura central 
+                    na trama, desempenhando um papel fundamental na formação e liderança da banda punk Black Stones. <br><br>
+                    Nascida em uma cidade do interior, Nana deixa sua cidade natal para seguir seu sonho de se tornar uma estrela do rock em Tóquio. 
+                    Sua história é marcada por relacionamentos complexos, especialmente com Ren Honjo, um guitarrista talentoso e seu namorado 
+                    inicialmente, que mais tarde se junta à banda rival Trapnest. <br><br>
+                    A personalidade forte e independente de Nana Osaki é equilibrada por uma vulnerabilidade e profundidade emocional que se revela ao 
+                    longo da narrativa. Sua jornada é caracterizada por desafios no mundo da música, amizades profundas e a busca constante por sua 
+                    identidade e felicidade. <br><br>
+                    A relação entre as duas protagonistas, ambas chamadas Nana (sendo Nana Komatsu a outra), é um dos aspectos centrais da trama, 
+                    destacando as complexidades da amizade feminina e as diferentes abordagens à vida. Nana Osaki representa a força e a paixão no 
+                    contexto da cena musical de Tóquio, tornando-se uma personagem cativante e simbólica ao longo da história.
+                </p>
+            </article>
+        </div>
+
+        <div class="titulo" id="idmusica">Músicas☆</div>
+
+        <div class="topico" id="musica">
+            <audio src="assets/songs/roseBS.mp3" controls></audio>
+            <p>-rose</p>
+            <audio src="assets/songs/withoutyouBS.mp3" controls></audio>
+            <p>-without you</p>
+            <audio src="assets/songs/zeroBS.mp3" controls></audio>
+            <p>-zero</p>
+            <audio src="assets/songs/screamBS.mp3" controls></audio>
+            <p>-scream</p>
+            <audio src="assets/songs/takemeoutBS.mp3" controls></audio>
+            <p>-Take me out</p>
+            <audio src="assets/songs/kuroinamidaBS.mp3" controls></audio>
+            <p>-Kuroi Namida</p>
+            <audio src="assets/songs/imaddictedtoyouBS.mp3" controls></audio>
+            <p>-I'm addicted to you</p>
+            <audio src="assets/songs/lucyBS.mp3" controls></audio>
+            <p>-lucy</p>
+            <p class="a" id="musicadef">Os Black Stones, a banda fictícia do mangá "Nana", liderada pela carismática Nana Osaki, lançou uma série 
+                de músicas que capturam a essência rebelde e apaixonada da cena musical de Tóquio. Cada canção é um reflexo das experiências, emoções e 
+                desafios enfrentados pelos membros da banda ao longo de sua jornada. No total, a banda lançou 8 músicas.</p>
+        </div>
+
+        <div class="titulo2" id="bs">Black Stones☆</div>
+
+        <div class="banda" id="banda">
+            <div id="membro" class="nanaosaki"></div>
+            <div id="membro" class="nobuo"></div>
+            <div id="membro" class="shinichi"></div>
+            <div id="membro" class="yasushi"></div>
+        </div>
+        <div class="descricao">
+            <div class="nome">nana</div>
+            <div class="nome">nobuo</div>
+            <div class="nome">shinichi</div>
+            <div class="nome">yasushi</div>
+        </div>
+    </main>
+
+
+
+    <div id="modalNanaOsaki" class="modal">
+        <div class="modalcoisas">
+            <div class="osaki">
+                <img src="assets/osaki.jpg" class="modalnana">
+                Nome: Nana Osaki <br>
+                Idade: 20 anos <br><br>
+                Personalidade: <br>
+                Nana Osaki, muitas vezes chamada de "Nana" pelos amigos, é uma personagem forte, independente e determinada. Ela possui uma 
+                personalidade intensa e apaixonada, contrastando com a natureza mais sonhadora de sua amiga homônima, Nana Komatsu. Nana Osaki tem 
+                uma aura de rebeldia e uma presença marcante que a torna magnética. <br><br>
+                Aparência: <br>
+                Nana Osaki é retratada como uma mulher carismática, com cabelos curtos e geralmente vestindo roupas que refletem seu estilo rock 'n' roll.
+                 Sua maquiagem e piercings contribuem para sua imagem distintiva. <br><br>
+                 História: <br>
+                 Nana Osaki é uma vocalista talentosa e ambiciosa da banda punk "Black Stones" (Blast). Ela se muda para Tóquio com o objetivo de 
+                 alcançar o estrelato na indústria da música. Ao longo da série, Nana enfrenta desafios profissionais e pessoais, explorando temas 
+                 como amizade, amor, traição e ambição. <br><br>
+                 "Quero encontrar algo que só eu posso fazer. Alguma coisa pela qual eu possa me apaixonar. Algo em que eu possa jogar meu coração 
+                 inteiro e alma."
+            </div>
+            <span class="fechar" onclick="closeModal('modalNanaOsaki')">x</span>
+        </div>
+    </div>
+  
+    <div id="modalNanaKomatsu" class="modal">
+        <div class="modalcoisas">
+            <div class="komatsu">
+                <img src="assets/komatsu.jpg" class="modalnana">
+                Nome: Nana Komatsu <br>
+                Idade: 20 anos <br><br>
+                Personalidade: <br>
+                Nana Komatsu, muitas vezes chamada de "Hachi" por seus amigos, é uma jovem otimista, romântica e sonhadora. Ela é ingênua em muitos 
+                aspectos da vida, o que a torna vulnerável, mas ao mesmo tempo, sua bondade e pureza a fazem uma pessoa encantadora. Nana é leal aos 
+                seus amigos e está disposta a fazer grandes sacrifícios pelos outros. <br><br>
+                Aparência: <br>
+                Nana Komatsu é retratada como uma mulher bonita, com cabelos longos e olhos expressivos. Seu estilo de moda reflete sua personalidade 
+                sonhadora e romântica. <br><br>
+                História: <br>
+                Nana Komatsu se muda para Tóquio com o sonho de encontrar o amor verdadeiro e viver uma vida emocionante. Ela se envolve em 
+                relacionamentos complicados ao longo da série, principalmente com o músico Ren Honjo e seu amigo de infância Nobu Terashima. 
+                Sua jornada na cidade grande é cheia de altos e baixos, refletindo os desafios e as alegrias da vida adulta. <br><br>
+                <i>"Eu não sei... o que eu realmente quero. Mas eu quero... ser amada sinceramente."</i>
+            </div>
+            <span class="fechar" onclick="closeModal('modalNanaKomatsu')">x</span>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div id="dialogNanaOsaki" class="dialog">
+        <img src="assets/nanacorpo.jpg" class="nanabs" id="fotobs">
+        <span class="fechar" data-nome-dialog="NanaOsaki">x</span>
+        <p>
+            Nome: Nana Osaki <br>
+            Função: Vocalista <br><br>
+            entrou para os Black Stones de uma maneira que reflete sua determinação e paixão pela música. Nana deixou sua cidade natal para perseguir 
+            seu sonho de se tornar uma estrela do rock em Tóquio. <br> <br>
+            Ao chegar à cidade, Nana conheceu Ren Honjo, um guitarrista habilidoso que mais tarde se tornou seu namorado e parceiro musical. Juntos, 
+            eles formaram uma banda chamada Blast. No entanto, a oportunidade de Ren brilhar como guitarrista principal surgiu, levando-o a aceitar uma 
+            proposta para se juntar a outra banda. <br><br>
+            Determinada a seguir seu próprio caminho e alcançar o estrelato, Nana decidiu formar sua própria banda. Assim, os Black Stones nasceram.
+
+        </p>
+    </div>
+
+    <div id="dialogNobuo" class="dialog">
+        <img src="assets/nobuocorpo.jpg" class="nanabs" id="fotobs">
+        <span class="fechar" data-nome-dialog="Nobuo">x</span>
+        <p>
+            Nome: Nobuo Terashima <br>
+            Função: Baterista <br><br>
+            Nobu, um baterista talentoso, cruzou o caminho de Nana Osaki durante sua busca por músicos para formar a banda. <br><br>
+            A entrada de Nobu nos Black Stones foi marcada por um encontro casual em um local de música ao vivo. Impressionado pela habilidade de Nobu 
+            na bateria e personalidade amigável do músico, Nana viu nele não apenas um baterista talentoso, mas também um amigo que 
+            compartilhava sua paixão pela música. <br><br>
+            Nobu não apenas se tornou o baterista dos Black Stones, mas também desempenhou um papel crucial na construção da coesão e da amizade dentro da 
+            banda. Sua entrada não  foi apenas uma adição técnica, mas uma contribuição valiosa para o espírito e a dinâmica única dos Black Stones.
+        </p>
+    </div>
+
+    <div id="dialogShinichi" class="dialog">
+        <img src="assets/shinichicorpo.jpg" class="nanabs" id="fotobs">
+        <span class="fechar" data-nome-dialog="Shinichi">x</span>
+        <p>
+            Nome: Shinichi Okazaki <br>
+            Função: Guitarrista <br><br>
+            Sua entrada na banda foi precedida por uma fase de busca de identidade e autodescoberta. Shin, originalmente associado a uma banda diferente, 
+            estava passando por momentos turbulentos em sua vida pessoal. Sua jornada para os Black Stones foi marcada por um encontro casual e impactante 
+            com Nana, que viu nele não apenas um guitarrista habilidoso, mas alguém que compartilhava uma intensidade e paixão semelhantes pela música. <br><br>
+            O convite de Nana para que Shin se juntasse aos Black Stones não foi apenas uma oferta musical, mas uma oportunidade de redenção e reinvenção 
+            para Shin. Ao ingressar na banda, Shin encontrou não apenas um espaço para expressar sua arte, mas também um grupo de pessoas que o apoiavam 
+            e entendiam suas lutas pessoais.
+        </p>
+    </div>
+
+    <div id="dialogYasushi" class="dialog">
+        <img src="assets/yasushicorpo.jpg" class="nanabs" id="fotobs">
+        <span class="fechar" data-nome-dialog="Yasushi">x</span>
+        <p>
+            Nome: Yasushi Takagi <br>
+            Função: Baixista <br><br>
+            Yasu, originalmente o baixista de uma banda anterior, encontrou Nana em um momento de mudanças e incertezas. <br><br>
+            A conexão entre Yasu e Nana foi estabelecida quando ele percebeu o potencial e a força da vocalista durante uma apresentação. 
+            Impressionado não apenas com o talento musical de Nana, mas também com sua determinação inabaláve. A proposta de Nana para que ele 
+            se tornasse o baixista dos Black Stones foi recebida com entusiasmo. <br><br>
+            A entrada de Yasu trouxe consigo uma estabilidade emocional e uma visão estratégica para a banda. Sua experiência prévia na cena musical 
+            foi um trunfo, contribuindo para a construção de uma base sólida para a banda enfrentar os desafios do cenário musical de Tóquio.
+        </p>
+    </div>
+
+</body>
+</html>
